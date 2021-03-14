@@ -12,7 +12,7 @@ public class HttpGenerator {
         str.append("<html>");
         str.append("<head>");
         str.append("<meta charset=\"UTF-8\">");
-        str.append("<title>提示页面,.</title>");
+        str.append("<title>提示页面</title>");
         str.append("</head>");
         str.append("<body>");
         str.append("<h3>");
