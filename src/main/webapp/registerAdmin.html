@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>注册用户</title>
+</head>
+<body>
+<div style="color:red;text-align:center">
+    <h1>此页面仅供学习交流使用，请勿输入常用的账户密码！</h1>
+    <h1>教材管理系统</h1>
+    <h2>管理员注册页面</h2>
+</div>
+<div style="text-align:center">
+    <form action="registerAdmin" method="post">
+
+        <input name="name" placeholder="请输入用户名" type="text">
+        <br/>
+        <input name="password" placeholder="密码" type="password">
+        <br/>
+        <h3 style="height: 15px">请输入管理员校验码</h3>
+
+        <input name="identity" placeholder="管理员校验码（666）" type="password">
+        <br>
+        <br>
+        <input type="submit" value="注册">
+        <br/>
+    </form>
+</div>
+
+<div style="text-align:center">
+    <a href="loginAdmin.html">已有管理员账号，前往登陆</a>
+    <br>
+    <a href="login.html">普通用户登陆</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>api.registerUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/registerUser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>registerAdmin</servlet-name>
+        <servlet-class>api.registerAdmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerAdmin</servlet-name>
+        <url-pattern>/registerAdmin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>loginUser</servlet-name>
+        <servlet-class>api.loginUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginUser</servlet-name>
+        <url-pattern>/userLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>loginAdmin</servlet-name>
+        <servlet-class>api.loginAdmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginAdmin</servlet-name>
+        <url-pattern>/AdminLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showAllBooks</servlet-name>
+        <servlet-class>api.showBooks</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showAllBooks</servlet-name>
+        <url-pattern>/showBooks</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showBookBody</servlet-name>
+        <servlet-class>api.showBookBody</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showBookBody</servlet-name>
+        <url-pattern>/bookDetail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddBook</servlet-name>
+        <servlet-class>api.AdminOptions.addBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBook</servlet-name>
+        <url-pattern>/AddBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteBook</servlet-name>
+        <servlet-class>api.AdminOptions.deleteBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBook</servlet-name>
+        <url-pattern>/DeleteBook</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>selectBorrowedBook</servlet-name>
+        <servlet-class>api.UserOptions.selectBorrowedBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selectBorrowedBook</servlet-name>
+        <url-pattern>/selectBorrowedBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BorrowBook</servlet-name>
+        <servlet-class>api.UserOptions.borrowBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BorrowBook</servlet-name>
+        <url-pattern>/borrowBook</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>returnBook</servlet-name>
+        <servlet-class>api.UserOptions.returnBook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>returnBook</servlet-name>
+        <url-pattern>/returnBook</url-pattern>
+    </servlet-mapping>
+
+</web-app>

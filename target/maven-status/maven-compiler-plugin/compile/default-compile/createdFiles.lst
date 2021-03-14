@@ -1,0 +1,12 @@
+view\HttpGenerator.class
+api\showBooks.class
+api\registerAdmin.class
+api\showBookBody.class
+api\AdminOptions\addBook.class
+api\loginUser.class
+api\UserOptions\borrowBook.class
+api\AdminOptions\deleteBook.class
+api\UserOptions\returnBook.class
+api\registerUser.class
+api\UserOptions\selectBorrowedBook.class
+api\loginAdmin.class
